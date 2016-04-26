@@ -6,5 +6,6 @@ import ru.kpfu.itis.capitalcity.model.Credentials;
  * Created by a.gilmullin on 05.04.2016.
  */
 public interface CredentialsService {
+    Credentials findByLogin(String login);
     void save(Credentials credentials);
 }

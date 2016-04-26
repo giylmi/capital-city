@@ -8,4 +8,5 @@ import ru.kpfu.itis.capitalcity.model.Credentials;
  * Created by a.gilmullin on 05.04.2016.
  */
 public interface CredentialsRepository extends MongoRepository<Credentials, String> {
+    Credentials findOneByLogin(String login);
 }

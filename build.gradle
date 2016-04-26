@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.3.3.RELEASE'
+		springBootVersion = '1.3.2.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -23,6 +23,9 @@ targetCompatibility = 1.8
 
 repositories {
 	mavenCentral()
+    maven {
+        url 'https://repo.spring.io/libs-milestone'
+    }
 }
 
 
@@ -31,6 +34,9 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-security')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-websocket')
+
+	compile 'org.springframework.session:spring-session:1.2.0.RC1'
+	compile 'org.springframework.session:spring-session-data-mongo:1.2.0.RC1'
 
     compile('org.apache.commons:commons-lang3:3.4')
     compile('commons-codec:commons-codec:1.10')

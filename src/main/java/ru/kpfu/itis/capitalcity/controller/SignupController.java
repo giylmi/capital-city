@@ -16,7 +16,7 @@ import ru.kpfu.itis.capitalcity.validator.CredentialsValidator;
  * Created by a.gilmullin on 05.04.2016.
  */
 @RestController
-public class AuthController {
+public class SignupController {
 
     @Autowired
     private CredentialsValidator credentialsValidator;
